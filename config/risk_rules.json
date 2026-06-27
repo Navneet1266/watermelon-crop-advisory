@@ -1,0 +1,58 @@
+{
+  "disease": "Fusarium Wilt",
+  "crop": "Watermelon",
+  "weather_window_days": 3,
+  "rules": [
+    {
+      "id": "temp_range",
+      "description": "3-day average temperature is between 20°C and 28°C",
+      "points": 40,
+      "condition": {
+        "metric": "3_day_avg_temp_c",
+        "operator": "between",
+        "min": 20,
+        "max": 28
+      }
+    },
+    {
+      "id": "consecutive_humidity",
+      "description": "Relative humidity >= 85% on all 3 consecutive days",
+      "points": 30,
+      "condition": {
+        "metric": "daily_humidity_pct",
+        "operator": "all_gte",
+        "threshold": 85
+      }
+    },
+    {
+      "id": "soil_moisture",
+      "description": "Field soil moisture is >= 90% of capacity",
+      "points": 30,
+      "condition": {
+        "metric": "soil_moisture_pct",
+        "operator": "gte",
+        "threshold": 90
+      }
+    }
+  ],
+  "risk_levels": [
+    {
+      "level": "HIGH",
+      "min_score": 70,
+      "max_score": 100,
+      "advisory": "Immediate chemical drenching required."
+    },
+    {
+      "level": "MODERATE",
+      "min_score": 40,
+      "max_score": 69,
+      "advisory": "Monitor field daily; restrict excess irrigation."
+    },
+    {
+      "level": "LOW",
+      "min_score": 0,
+      "max_score": 39,
+      "advisory": "No action required."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "crop-advisory-api",
+  "version": "1.0.0",
+  "description": "Watermelon crop advisory API — growth stage, disease risk, nutrient recommendations",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --experimental-sqlite src/server.js",
+    "dev":   "nodemon --exec \"node --experimental-sqlite\" src/server.js",
+    "seed":  "node --experimental-sqlite seed.js",
+    "test":  "jest --testEnvironment node --verbose"
+  },
+  "dependencies": {
+    "cors":    "^2.8.5",
+    "dotenv":  "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest":    "^29.7.0",
+    "nodemon": "^3.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

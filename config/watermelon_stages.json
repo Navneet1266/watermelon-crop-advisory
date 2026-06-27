@@ -1,0 +1,32 @@
+[
+  {
+    "stage_id": 1,
+    "stage_name": "Germination & Emergence",
+    "gdd_start": 0,
+    "gdd_end": 100
+  },
+  {
+    "stage_id": 2,
+    "stage_name": "Vegetative & Vining",
+    "gdd_start": 101,
+    "gdd_end": 400
+  },
+  {
+    "stage_id": 3,
+    "stage_name": "Flowering & Fruit Set",
+    "gdd_start": 401,
+    "gdd_end": 700
+  },
+  {
+    "stage_id": 4,
+    "stage_name": "Fruit Development & Sizing",
+    "gdd_start": 701,
+    "gdd_end": 1000
+  },
+  {
+    "stage_id": 5,
+    "stage_name": "Ripening & Harvest",
+    "gdd_start": 1001,
+    "gdd_end": 9999
+  }
+]

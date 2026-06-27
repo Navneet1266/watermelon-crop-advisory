@@ -1,0 +1,24 @@
+# dependencies
+node_modules/
+
+# database files — generated at runtime, not committed
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# environment config — contains secrets, each dev has their own
+.env
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# editor folders
+.vscode/
+.idea/
+
+
+# logs
+*.log
+npm-debug.log*

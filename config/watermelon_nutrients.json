@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "crop": "Watermelon",
+    "Season_of_Planting": "Rabi",
+    "stage": "Germination & Emergence",
+    "nutrient": "Nitrogen",
+    "fertilizer": "Urea",
+    "Soil_availability_NPK_threshold": 150,
+    "dose_under_threshold_kg_ha": 110,
+    "dose_above_threshold_kg_ha": 40
+  },
+  {
+    "id": 2,
+    "crop": "Watermelon",
+    "Season_of_Planting": "Rabi",
+    "stage": "Germination & Emergence",
+    "nutrient": "Phosphorus",
+    "fertilizer": "Single Super Phosphate",
+    "Soil_availability_NPK_threshold": 50,
+    "dose_under_threshold_kg_ha": 150,
+    "dose_above_threshold_kg_ha": 50
+  },
+  {
+    "id": 3,
+    "crop": "Watermelon",
+    "Season_of_Planting": "Rabi",
+    "stage": "Germination & Emergence",
+    "nutrient": "Potash",
+    "fertilizer": "Muriate of Potash",
+    "Soil_availability_NPK_threshold": 180,
+    "dose_under_threshold_kg_ha": 120,
+    "dose_above_threshold_kg_ha": 30
+  }
+]
